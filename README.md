@@ -162,3 +162,9 @@ Backup wallet keys:
 ```bash
 nockchain-wallet export-keys
 ```
+* This will save your keys to a file called `keys.export` in the current directory.
+
+Import wallet keys:
+```bash
+nockchain-wallet import-keys --input keys.export
+```
