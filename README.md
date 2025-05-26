@@ -168,3 +168,7 @@ Import wallet keys:
 ```bash
 nockchain-wallet import-keys --input keys.export
 ```
+* Make sure `keys.export` is in your `nockchain` directory.
+
+* Note: For Local systems who are using a home router network which is mostly behind NAT, they need to forward ports. Ask chatgpt until I get the chance to write a guide for it.
+
