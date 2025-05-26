@@ -156,3 +156,4 @@ nockchain-wallet keygen
 nano .env
 ```
 To save: Press `Ctrl + X`, `Y` & `Enter`.
+
