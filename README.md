@@ -157,3 +157,8 @@ nano .env
 ```
 To save: Press `Ctrl + X`, `Y` & `Enter`.
 
+## Step 6: Backup/Import Wallet Keys
+Backup wallet keys:
+```bash
+nockchain-wallet export-keys
+```
