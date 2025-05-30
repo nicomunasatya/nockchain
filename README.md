@@ -218,3 +218,12 @@ nockchain --mine \
 --peer /ip4/159.112.204.186/udp/3006/quic-v1 \
 --peer /ip4/217.14.223.78/udp/3006/quic-v1
 ```
+* Replace `PUBLIC_KEY`.
+* If you are getting `generating new candidate`, then you are sucessfully mining blocks!
+* No worry if you are getting Errors like `command: timer`, `ConnectionError`, etc.
+
+![image](https://github.com/user-attachments/assets/61730f44-c55c-4452-918c-b216982f2033)
+
+* To minimize screen:  `Ctrl` + `A` + `D`
+* Now, You can run more Miner instances by increasing +1 to the numbers of run command.
+* Miner's highly eating your RAM, keep watching your RAM usage with command: `htop`, before running more instances.
