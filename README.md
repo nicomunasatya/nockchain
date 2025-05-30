@@ -184,3 +184,37 @@ cd ~/nockchain
 
 * The following method will be for running multiple miner instances on a server, you can repeat it by inscreasing `n` numbers by `n+1`
 
+Run Miner 1:
+```console
+# create directory
+mkdir miner1 && cd miner1
+
+# open screen
+screen -S miner1
+
+# start miner
+RUST_LOG=info,nockchain=info,nockchain_libp2p_io=info,libp2p=info,libp2p_quic=info \
+MINIMAL_LOG_FORMAT=true \
+nockchain --mine \
+--mining-pubkey PUB_KEY
+
+# OR
+
+# start miner with peers (find good peers in nockchain tg)
+RUST_LOG=info,nockchain=info,nockchain_libp2p_io=info,libp2p=info,libp2p_quic=info \
+MINIMAL_LOG_FORMAT=true \
+nockchain --mine \
+--mining-pubkey PUB_KEY \
+--peer /ip4/95.216.102.60/udp/3006/quic-v1 \
+--peer /ip4/65.108.123.225/udp/3006/quic-v1 \
+--peer /ip4/65.109.156.108/udp/3006/quic-v1 \
+--peer /ip4/65.21.67.175/udp/3006/quic-v1 \
+--peer /ip4/65.109.156.172/udp/3006/quic-v1 \
+--peer /ip4/34.174.22.166/udp/3006/quic-v1 \
+--peer /ip4/34.95.155.151/udp/30000/quic-v1 \
+--peer /ip4/34.18.98.38/udp/30000/quic-v1 \
+--peer /ip4/96.230.252.205/udp/3006/quic-v1 \
+--peer /ip4/94.205.40.29/udp/3006/quic-v1 \
+--peer /ip4/159.112.204.186/udp/3006/quic-v1 \
+--peer /ip4/217.14.223.78/udp/3006/quic-v1
+```
