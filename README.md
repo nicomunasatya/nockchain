@@ -227,3 +227,10 @@ nockchain --mine \
 * To minimize screen:  `Ctrl` + `A` + `D`
 * Now, You can run more Miner instances by increasing +1 to the numbers of run command.
 * Miner's highly eating your RAM, keep watching your RAM usage with command: `htop`, before running more instances.
+
+### Useful Commands:
+Restart Miner:
+* If you ever stopped your Miner, to restart it again, delete old data files first:
+```bash
+rm -rf ./.data.nockchain .socket/nockchain_npc.sock
+```
