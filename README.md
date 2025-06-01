@@ -257,3 +257,15 @@ screen -XS miner quit
 ```
 
 ---
+
+### Get balance
+Make sure you are in a miner directory to get connected to the network when executing this command .e.g (`cd ~/nockchain/miner1`)
+```
+nockchain-wallet --nockchain-socket .socket/nockchain_npc.sock list-notes
+```
+If you got balance, then the response is like this:
+```
+- name: [first='xxxxx' last='xxxxx']
+- assets: 2.576.980.378
+- source: [p=[BLAH] is-coinbase=%.y]
+```
