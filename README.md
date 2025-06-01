@@ -234,3 +234,9 @@ Restart Miner:
 ```bash
 rm -rf ./.data.nockchain .socket/nockchain_npc.sock
 ```
+* Make sure you are in the specific miner's directory you want to restart .e.g `miner1`, `miner2`, etc.
+
+Screen commands
+* Ensure screens do not overlap. Before opening or switching to another screen, minimize or close the current screen.
+* Replace `miner` with your miner's screen name .e.g `miner1`, `miner2`, etc.
+```console
