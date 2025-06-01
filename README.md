@@ -240,3 +240,20 @@ Screen commands
 * Ensure screens do not overlap. Before opening or switching to another screen, minimize or close the current screen.
 * Replace `miner` with your miner's screen name .e.g `miner1`, `miner2`, etc.
 ```console
+# Return screen
+screen -r miner
+
+# Minimize screen
+Press: CTRL + A + D
+
+# Screens list
+screen -ls
+
+# Stop Node (when inside a screen)
+Press: Ctrl + C
+
+# Kill and Remove Node (when outside a screen)
+screen -XS miner quit
+```
+
+---
